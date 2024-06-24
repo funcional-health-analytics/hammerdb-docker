@@ -1,10 +1,23 @@
-[![Build Status](https://img.shields.io/docker/build/webysther/hammerdb.svg?style=flat-square)](https://hub.docker.com/r/webysther/hammerdb/)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fwebysther%2Fhammerdb-docker.svg?type=shield&style=flat-square)](https://app.fossa.io/projects/git%2Bgithub.com%2Fwebysther%2Fhammerdb-docker?ref=badge_shield)
 [![Software License](https://goo.gl/FU2Kw1)](LICENSE)
 
 # 🐋 Docker for HammerDB
 
+Deprecated: [use TCP Official docker](https://hub.docker.com/r/tpcorg/hammerdb)
+
 [HammerDB](https://github.com/TPC-Council/HammerDB) is a Database Load Testing and Benchmarking Tool.
+
+Configured and working clients for MS SQL Server, PotsgreSQL, MySQL and Redis.
+
+```
+docker run -it webysther/hammerdb ./hammerdbcli
+
+hammerdb>librarycheck
+tdbc::odbc for MSSQLServer
+mysqltcl for MySQL
+Pgtcl for PostgreSQL
+redis for Redis
+```
 
 ## Usage
 
